@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        {{>header}}
+        <title>Sign In</title>
+    </head>
+    <body>
+        {{>navbar}}
+        <div class='login-page'>
+            <div class='login-image-container'>
+                <img src='images/siginin_vector.jpg' />
+            </div>
+            <div class='login-form-container'>
+                <form action='/login' method='POST'>
+                    <input type='email' class='loginInput' placeholder='Email *' name='email' required/>
+                    <input type='password' class='loginInput' placeholder='Password *' style='margin-bottom:30px' name='password' required/>
+                    <input type='checkbox'style='margin-right:10px'/>Remember Me
+                    <br/><br/><br/>
+                    <button type='submit' class='login-btn' style='margin-bottom:20px'>Sign In</button>
+                </form>
+                <a href='/register'>Not have a account?</a>
+            </div>
+        </div>
+    </body>
+</html>

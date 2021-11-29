@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        {{>header}}
+        <title>Registeration</title>
+    </head>
+    <body>
+        {{>navbar}}
+        <div class='register-page'>
+            <div class='register-image-container'>
+                <img src='images/register_vector.jpg' />
+            </div>
+            <div class='register-form-container'>
+                <form action='/register' method='POST'>
+                    <input type='text' class='registerInput' placeholder='First Name *' name='fname'/>
+                    <input type='text' class='registerInput' placeholder='Last Name *' name='lname'/>
+                    <input type='email' class='registerInput' placeholder='Email *' name='email'/>
+                    <input type='number' class='registerInput' placeholder='Phone No *' name='phone'/>
+                    <input type='number' class='registerInput' placeholder='Age *' name='age'/>
+                    <input type='password' class='registerInput' placeholder='Password *' name='password'/>
+                    <input type='password' class='registerInput' placeholder='Confirm Password *' style='margin-bottom:30px' name='confirmpassword'/>
+                    <input type='radio'value='male' name='gender' style='margin-right:10px'/><span style='font-size:1.2rem'>Male</span>
+                    <input type='radio'value='female' name='gender'style='margin-left:50px; margin-right:10px'/><span style='font-size:1.2rem'>Female</span>
+                    <br/><br/><br/>
+                    <button type='submit' class='register-btn'>Register</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
